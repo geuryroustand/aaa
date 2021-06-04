@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet">
+  <title>Netflix</title>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg net-bg-color">
+    <a class="navbar-brand" href="#"><img src="./assets/netflix_logo.png" alt="Netflix-logo" height="40"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+      aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white font-weight-bold" href="#">Tv Shows<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-white" href="#" aria-expanded="false">
+            Movies
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Recently Added</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">My Last</a>
+        </li>
+      </ul>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-search text-white font-weight-bold mr-2" viewBox="0 0 16 16">
+        <path
+          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+      </svg>
+      <form class="d-flex">
+        <input class="form-control mr-2 net-bg-color border-dark border-0 text-white active" type="search"
+          placeholder="Kids" size="1" aria-label="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+          class="bi bi-search text-white font-weight-bold mt-2 ml-n3" viewBox="0 0 16 16">
+          <path
+            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+        </svg>
+        <div class="collapse navbar-collapse" id="navbar-list-4">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="assets/avatar.png" width="30" height="30" class="" />
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Dashboard</a>
+                <a class="dropdown-item" href="#">Edit Profile</a>
+                <a class="dropdown-item" href="#">Log Out</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </nav>
+  <!-- <div class="d-flex bd-highlight">
+    <div class="ml-4 flex-grow-1 text-white">Flex item</div>
+    <div class="ml-4 flex-grow-1 text-white">Flex item</div>
+    <div class="mr-4 bd-highlight text-white">Flex item</div>
+    
+  </div> -->
+  <div class="d-flex bd-highlight mb-3">
+    <div class="ml-4 bd-highlight text-white">TV SHOWS</div>
+    <div class="ml-4 bd-highlight text-white">
+      <!-- Example single danger button -->
+      <div class="btn-group">
+        <button type="button" class="btn net-bg-color text-white btn-sm border-light border-5 dropdown-toggle"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Genres
+        </button>
+        <!-- <button type="button" class=" buttondrop1 btn net-bg-color text-white btn-sm border-5 border-light dropdown-toggle text-left " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genres</button> -->
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+    </div>
+    <div class="ml-auto p-2 mr-3 mt-n2 bd-highlight text-white">
+      <!-- <button class="btn net-bg-color border text-white"> -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" fill="currentColor"
+        class="bi bi-distribute-vertical border-light" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M1 1.5a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 0-1h-13a.5.5 0 0 0-.5.5zm0 13a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 0-1h-13a.5.5 0 0 0-.5.5z" />
+        <path d="M2 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" fill="currentColor"
+        class="bi bi-distribute-vertical border-light" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M1 1.5a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 0-1h-13a.5.5 0 0 0-.5.5zm0 13a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 0-1h-13a.5.5 0 0 0-.5.5z" />
+        <path d="M2 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7z" />
+      </svg>
+      <!-- </button> -->
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid  ">
+
+    <div class="mt-5 mb-2 right">
+      <h2> Trending Now </h2>
+    </div>
+
+    <!-- row-cols-xl-4 -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 mx-n1 right ">
+
+      <div class=" episodes  col  px-1  ">
+        <img class="mb-2   mb-md-2   mb-sm-0  img-fluid w-100" src="./assets/media/media0.webp" alt="">
+        <p class="p"> New Episodes </p>
+        <p class="netflix">Netflix</p>
+      </div>
+
+      <div class=" col px-1   ">
+        <img class="mb-2  mb-md-2 mb-sm-0  px-md-2 img-fluid w-100" src="./assets/media/media1.jpg" alt="">
+      </div>
+
+      <div class=" col  px-1  episodes  ">
+        <img class="mb-2 mb-md-2 mb-sm-0   img-fluid w-100" src="./assets/media/media2.webp" alt="">
+        <p class="p"> New Episodes </p>
+        <p class="netflix">Netflix</p>
+      </div>
+
+      <div class=" col  px-1  ">
+        <img class=" mb-2 mb-md-2 mb-sm-0  img-fluid w-100" src="./assets/media/media3.webp" alt="">
+      </div>
+
+      <div class=" col  px-1 episodes   ">
+        <img class="mb-2  mb-md-2 mb-sm-0  img-fluid w-100" src="./assets/media/media26.webp" alt="">
+        <p class="netflix">Netflix</p>
+      </div>
+
+      <div class=" col  px-1 ">
+        <img class="mb-2  mb-md-2 mb-sm-0  img-fluid w-100" src="./assets/media/media5.webp" alt="">
+
+      </div>
+    </div>
+
+
+    <div class="mt-5  mb-2 right">
+      <h2>Watch It Again </h2>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6  mx-n1 right">
+
+      <div class=" episodes  col  px-1  ">
+        <img class="mb-2  mb-md-2   mb-sm-0  img-fluid w-100" src="./assets/media/media7.webp" alt="">
+        <p class="netflix">Netflix</p>
+      </div>
+      <div class=" col  px-1  episodes  ">
+        <img class="mb-2 mb-md-2 mb-sm-0   img-fluid w-100" src="./assets/media/media8.webp" alt="">
+        <p class="netflix">Netflix</p>
+      </div>
+      <div class=" col  px-1 episodes ">
+        <img class=" mb-2 mb-md-2 mb-sm-0  img-fluid w-100" src="./assets/media/media14.webp" alt="">
+        <p class="netflix">Netflix</p>
+      </div>
+
+      <div class=" col  px-1 episodes   ">
+        <img class="mb-2  mb-md-2 mb-sm-0  img-fluid w-100" src="./assets/media/media16.webp" alt="">
+        <p class="netflix">Netflix</p>
+      </div>
+      <div class=" col  px-1 episodes ">
+        <img class="mb-2  mb-md-2 mb-sm-0  img-fluid w-100" src="./assets/media/media19.webp" alt="">
+        <p class="netflix">Netflix</p>
+      </div>
+      <div class=" col  px-1  ">
+        <img class="mb-2  mb-md-2 mb-sm-0  img-fluid w-100" src="./assets/media/media8.webp" alt="">
+
+      </div>
+    </div>
+
+
+
+    <div class="mt-5  mb-2  right">
+      <h2>New Releases </h2>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6  mx-n1 right ">
+
+      <div class=" episodes  col  px-1  ">
+        <img class="mb-2  mb-md-2   mb-sm-0  img-fluid w-100" src="./assets/media/media21.webp" alt="">
+        <p class="netflix">Netflix</p>
+      </div>
+      <div class=" col  px-1  episodes  ">
+        <img class="mb-2 mb-md-2 mb-sm-0   img-fluid w-100" src="./assets/media/media22.webp" alt="">
+        <p class="netflix">Netflix</p>
+      </div>
+      <div class=" col  px-1 episodes ">
+        <img class=" mb-2 mb-md-2 mb-sm-0  img-fluid w-100" src="./assets/media/media23.webp" alt="">
+        <p class="netflix">Netflix</p>
+      </div>
+
+      <div class=" col  px-1 episodes   ">
+        <img class="mb-2  mb-md-2 mb-sm-0  img-fluid w-100" src="./assets/media/media25.webp" alt="">
+        <p class="netflix">Netflix</p>
+      </div>
+      <div class=" col  px-1 episodes ">
+        <img class="mb-2  mb-md-2 mb-sm-0  img-fluid w-100" src="./assets/media/media26.webp" alt="">
+        <p class="netflix">Netflix</p>
+      </div>
+      <div class=" col  px-1 episodes ">
+        <img class="mb-2  mb-md-2 mb-sm-0  img-fluid w-100" src="./assets/media/media31.webp" alt="">
+        <p class="netflix">Netflix</p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <!-- <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="/assets/media/media0.webp" class="d-block " alt="...">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="/assets/media/media1.jpg" class="d-block " alt="...">
+      </div>
+
+      <div class="carousel-item">
+        <img src="/assets/media/media2.webp" class="d-block " alt="...">
+      </div>
+
+      <div class="carousel-item">
+        <img src="/assets/media/media3.webp" class="d-block " alt="...">
+      </div>
+
+      <div class="carousel-item">
+        <img src="/assets/media/media4.jpg" class="d-block " alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/media/media4.jpg" class="d-block " alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/media/media4.jpg" class="d-block " alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/media/media4.jpg" class="d-block " alt="...">
+      </div>
+
+
+
+
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
